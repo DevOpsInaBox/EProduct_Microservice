@@ -15,6 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableAutoConfiguration
 public class DataWithMicroservicesJpaApplication {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DataWithMicroservicesJpaApplication.class, args);
 	}
