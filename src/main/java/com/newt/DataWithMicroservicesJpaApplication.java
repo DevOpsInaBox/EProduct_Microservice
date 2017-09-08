@@ -7,12 +7,16 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import io.prometheus.client.spring.boot.EnablePrometheusEndpoint;
+import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableSwagger2
 @EnableAutoConfiguration
+@EnablePrometheusEndpoint
+@EnableSpringBootMetricsCollector
 public class DataWithMicroservicesJpaApplication {
 
 	
